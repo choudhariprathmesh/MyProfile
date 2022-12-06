@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  <style>
+    body{
+      background-color:rgb(240, 170, 170);
+      padding-left: 500px;
+    }
+    label {
+      color: rgb(71, 11, 131);
+    }
+
+    input[type="text"],select {
+      color: red;
+      border: 1px solid black;
+      width: 200px;
+      height: 25px;
+      border-radius: 30px;
+
+    }
+
+    h2:hover {
+      color: red;
+    }
+
+    button:hover {
+      background-color: black;
+    }
+
+    button[type="submit"],button[type="reset"] {
+      color: red;
+      border-radius: 20px;
+      width: 100px;
+      height: 30px;
+    }
+    input[type="number"],input[type="email"],input[type="password"],input[type="week"],input[type="time"],
+    input[type="file"],input[type="date"]
+    {
+      color: navy;
+      border: 1px solid black;
+      width: 200px;
+      height: 25px;
+      border-radius: 30px;
+    }
+    textarea{
+      border-radius: 20px; 
+      border: 1px solid black;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h2>Student Registration Form</h2>
+  <form>
+    <table>
+      <tbody>
+        <tr>
+          <td><label> First Name </label></td>
+          <td><input type="text" autofocus placeholder="Enter a First Name"></td>
+        </tr>
+
+        <tr>
+          <td><label> Last Name </label></td>
+          <td><input type="text" placeholder="Enter a Last Name"></td>
+        </tr>
+
+        <tr>
+          <td><label> Mobile Number</label></td>
+          <td><input type="number" placeholder="Max 10 digits" /></td>
+        </tr>
+
+        <tr>
+          <td><label> Email ID </label></td>
+          <td><input type="email" placeholder="abc@gmail.com" /></td>
+        </tr>
+
+        <tr>
+          <td><label> Password </label></td>
+          <td><input type="password"  placeholder="Enter a Password"></td>
+        </tr>
+
+        <tr>
+          <td><label> Date of Birth </label></td>
+          <td><input type="date" /></td>
+        </tr>
+
+        <tr>
+          <td><label> Available in week </label></td>
+          <td><input type="week" /></td>
+        </tr>
+
+        <tr>
+          <td><label> Available in time </label></td>
+          <td><input type="time" /></td>
+        </tr>
+
+        <tr>
+          <td><label> Profile Photo </label></td>
+          <td><input type="file" /></td>
+        </tr>
+
+        <tr>
+          <td><label> Upload Mark Sheet</label></td>
+          <td><input type="file" multiple /></td>
+        </tr>
+
+        <tr>
+          <td><label> Select Graduation </label></td>
+          <td>
+            <select>
+              <option>BE</option>
+              <option>MCA</option>
+              <option>BCA</option>
+              <option>B-TECH</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td> <label> Gender </label> </td>
+          <td>
+            <input type="radio" name="gender"> <label> Male </label>
+            <input type="radio" name="gender"> <label> Female </label>
+            <input type="radio" name="gender"> <label> Others </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td> <label> Select Training </label> </td>
+          <td>
+            <input type="checkbox"> <label> Java </label>
+            <input type="checkbox"> <label> Angular </label>
+            <input type="checkbox"> <label> React </label>
+            <input type="checkbox"> <label> Data Science </label>
+            <input type="checkbox"> <label> Testing </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label> Age </label></td>
+          <td><input type="number" /></td>
+        </tr>
+
+        <tr>
+          <td><label>State </label></td>
+          <td><input type="text" value="MH" readonly /></td>
+        </tr>
+
+        <tr>
+          <td><label> Country</label></td>
+          <td><input type="text" value="India" disabled /></td>
+        </tr>
+
+        <tr>
+          <td> <label> Address</label> </td>
+          <td> <textarea rows="7" cols="40"> </textarea> </td>
+        </tr>
+
+        <tr>
+          <td> <button type="submit"> Register </button> </td>
+          <td> <button type="reset"> Clear </button> </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+
+</html>
